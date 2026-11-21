@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Demo build: no live hosting yet, so locations point at the project's
+     repository files. Swap the base for the live domain at deployment. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://github.com/multitalentedservices/mts-portfolio-website/blob/main/index.html</loc></url>
+  <url><loc>https://github.com/multitalentedservices/mts-portfolio-website/blob/main/work.html</loc></url>
+  <url><loc>https://github.com/multitalentedservices/mts-portfolio-website/blob/main/services.html</loc></url>
+  <url><loc>https://github.com/multitalentedservices/mts-portfolio-website/blob/main/about.html</loc></url>
+  <url><loc>https://github.com/multitalentedservices/mts-portfolio-website/blob/main/contact.html</loc></url>
+</urlset>

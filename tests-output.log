@@ -1,0 +1,278 @@
+PASS  index.html → assets/favicon.svg resolves
+PASS  index.html → css/style.css resolves
+PASS  index.html → index.html resolves
+PASS  index.html → index.html resolves
+PASS  index.html → work.html resolves
+PASS  index.html → services.html resolves
+PASS  index.html → about.html resolves
+PASS  index.html → contact.html resolves
+PASS  index.html → contact.html resolves
+PASS  index.html → index.html resolves
+PASS  index.html → work.html resolves
+PASS  index.html → services.html resolves
+PASS  index.html → about.html resolves
+PASS  index.html → contact.html resolves
+PASS  index.html → contact.html resolves
+PASS  index.html → contact.html resolves
+PASS  index.html → work.html resolves
+PASS  index.html → assets/hero-studio.jpg resolves
+PASS  index.html → services.html resolves
+PASS  index.html → anchor #websites exists in services.html
+PASS  index.html → services.html resolves
+PASS  index.html → anchor #software exists in services.html
+PASS  index.html → services.html resolves
+PASS  index.html → anchor #apps exists in services.html
+PASS  index.html → services.html resolves
+PASS  index.html → anchor #marketing exists in services.html
+PASS  index.html → services.html resolves
+PASS  index.html → anchor #api exists in services.html
+PASS  index.html → services.html resolves
+PASS  index.html → anchor #chatbots exists in services.html
+PASS  index.html → services.html resolves
+PASS  index.html → anchor #cloud exists in services.html
+PASS  index.html → services.html resolves
+PASS  index.html → anchor #care exists in services.html
+PASS  index.html → work.html resolves
+PASS  index.html → assets/abstract-geometry.jpg resolves
+PASS  index.html → assets/process-sketch.jpg resolves
+PASS  index.html → services.html resolves
+PASS  index.html → anchor #process exists in services.html
+PASS  index.html → assets/asad-ali.jpg resolves
+PASS  index.html → about.html resolves
+PASS  index.html → index.html resolves
+PASS  index.html → work.html resolves
+PASS  index.html → services.html resolves
+PASS  index.html → about.html resolves
+PASS  index.html → contact.html resolves
+PASS  index.html → services.html resolves
+PASS  index.html → anchor #websites exists in services.html
+PASS  index.html → services.html resolves
+PASS  index.html → anchor #software exists in services.html
+PASS  index.html → services.html resolves
+PASS  index.html → anchor #apps exists in services.html
+PASS  index.html → services.html resolves
+PASS  index.html → anchor #marketing exists in services.html
+PASS  index.html → js/logic.js resolves
+PASS  index.html → js/main.js resolves
+PASS  work.html → assets/favicon.svg resolves
+PASS  work.html → css/style.css resolves
+PASS  work.html → index.html resolves
+PASS  work.html → index.html resolves
+PASS  work.html → work.html resolves
+PASS  work.html → services.html resolves
+PASS  work.html → about.html resolves
+PASS  work.html → contact.html resolves
+PASS  work.html → contact.html resolves
+PASS  work.html → index.html resolves
+PASS  work.html → work.html resolves
+PASS  work.html → services.html resolves
+PASS  work.html → about.html resolves
+PASS  work.html → contact.html resolves
+PASS  work.html → contact.html resolves
+PASS  work.html → contact.html resolves
+PASS  work.html → index.html resolves
+PASS  work.html → work.html resolves
+PASS  work.html → services.html resolves
+PASS  work.html → about.html resolves
+PASS  work.html → contact.html resolves
+PASS  work.html → services.html resolves
+PASS  work.html → anchor #websites exists in services.html
+PASS  work.html → services.html resolves
+PASS  work.html → anchor #software exists in services.html
+PASS  work.html → services.html resolves
+PASS  work.html → anchor #apps exists in services.html
+PASS  work.html → services.html resolves
+PASS  work.html → anchor #marketing exists in services.html
+PASS  work.html → js/logic.js resolves
+PASS  work.html → js/main.js resolves
+PASS  services.html → assets/favicon.svg resolves
+PASS  services.html → css/style.css resolves
+PASS  services.html → index.html resolves
+PASS  services.html → index.html resolves
+PASS  services.html → work.html resolves
+PASS  services.html → services.html resolves
+PASS  services.html → about.html resolves
+PASS  services.html → contact.html resolves
+PASS  services.html → contact.html resolves
+PASS  services.html → index.html resolves
+PASS  services.html → work.html resolves
+PASS  services.html → services.html resolves
+PASS  services.html → about.html resolves
+PASS  services.html → contact.html resolves
+PASS  services.html → contact.html resolves
+PASS  services.html → contact.html resolves
+PASS  services.html → contact.html resolves
+PASS  services.html → contact.html resolves
+PASS  services.html → contact.html resolves
+PASS  services.html → contact.html resolves
+PASS  services.html → contact.html resolves
+PASS  services.html → contact.html resolves
+PASS  services.html → contact.html resolves
+PASS  services.html → contact.html resolves
+PASS  services.html → index.html resolves
+PASS  services.html → work.html resolves
+PASS  services.html → services.html resolves
+PASS  services.html → about.html resolves
+PASS  services.html → contact.html resolves
+PASS  services.html → services.html resolves
+PASS  services.html → anchor #websites exists in services.html
+PASS  services.html → services.html resolves
+PASS  services.html → anchor #software exists in services.html
+PASS  services.html → services.html resolves
+PASS  services.html → anchor #apps exists in services.html
+PASS  services.html → services.html resolves
+PASS  services.html → anchor #marketing exists in services.html
+PASS  services.html → js/logic.js resolves
+PASS  services.html → js/main.js resolves
+PASS  about.html → assets/favicon.svg resolves
+PASS  about.html → css/style.css resolves
+PASS  about.html → index.html resolves
+PASS  about.html → index.html resolves
+PASS  about.html → work.html resolves
+PASS  about.html → services.html resolves
+PASS  about.html → about.html resolves
+PASS  about.html → contact.html resolves
+PASS  about.html → contact.html resolves
+PASS  about.html → index.html resolves
+PASS  about.html → work.html resolves
+PASS  about.html → services.html resolves
+PASS  about.html → about.html resolves
+PASS  about.html → contact.html resolves
+PASS  about.html → contact.html resolves
+PASS  about.html → assets/mts-logo.jpg resolves
+PASS  about.html → assets/asad-ali.jpg resolves
+PASS  about.html → contact.html resolves
+PASS  about.html → index.html resolves
+PASS  about.html → work.html resolves
+PASS  about.html → services.html resolves
+PASS  about.html → about.html resolves
+PASS  about.html → contact.html resolves
+PASS  about.html → services.html resolves
+PASS  about.html → anchor #websites exists in services.html
+PASS  about.html → services.html resolves
+PASS  about.html → anchor #software exists in services.html
+PASS  about.html → services.html resolves
+PASS  about.html → anchor #apps exists in services.html
+PASS  about.html → services.html resolves
+PASS  about.html → anchor #marketing exists in services.html
+PASS  about.html → js/logic.js resolves
+PASS  about.html → js/main.js resolves
+PASS  contact.html → assets/favicon.svg resolves
+PASS  contact.html → css/style.css resolves
+PASS  contact.html → index.html resolves
+PASS  contact.html → index.html resolves
+PASS  contact.html → work.html resolves
+PASS  contact.html → services.html resolves
+PASS  contact.html → about.html resolves
+PASS  contact.html → contact.html resolves
+PASS  contact.html → contact.html resolves
+PASS  contact.html → index.html resolves
+PASS  contact.html → work.html resolves
+PASS  contact.html → services.html resolves
+PASS  contact.html → about.html resolves
+PASS  contact.html → contact.html resolves
+PASS  contact.html → contact.html resolves
+PASS  contact.html → index.html resolves
+PASS  contact.html → work.html resolves
+PASS  contact.html → services.html resolves
+PASS  contact.html → about.html resolves
+PASS  contact.html → contact.html resolves
+PASS  contact.html → services.html resolves
+PASS  contact.html → anchor #websites exists in services.html
+PASS  contact.html → services.html resolves
+PASS  contact.html → anchor #software exists in services.html
+PASS  contact.html → services.html resolves
+PASS  contact.html → anchor #apps exists in services.html
+PASS  contact.html → services.html resolves
+PASS  contact.html → anchor #marketing exists in services.html
+PASS  contact.html → js/logic.js resolves
+PASS  contact.html → js/main.js resolves
+  (160 internal file refs checked)
+PASS  index.html has a unique title
+PASS  index.html has a meta description
+PASS  index.html has exactly one H1
+PASS  index.html references the favicon
+PASS  work.html has a unique title
+PASS  work.html has a meta description
+PASS  work.html has exactly one H1
+PASS  work.html references the favicon
+PASS  services.html has a unique title
+PASS  services.html has a meta description
+PASS  services.html has exactly one H1
+PASS  services.html references the favicon
+PASS  about.html has a unique title
+PASS  about.html has a meta description
+PASS  about.html has exactly one H1
+PASS  about.html references the favicon
+PASS  contact.html has a unique title
+PASS  contact.html has a meta description
+PASS  contact.html has exactly one H1
+PASS  contact.html references the favicon
+PASS  valid lead passes
+PASS  Pakistani mobile accepted as contact
+PASS  international-format phone accepted
+PASS  one-letter name rejected
+PASS  empty name rejected
+PASS  garbage contact rejected
+PASS  empty contact rejected
+PASS  missing service rejected
+PASS  unknown service rejected
+PASS  short message rejected
+PASS  over-long message rejected
+PASS  all four errors shown on empty submit
+PASS  fixing name clears ONLY the name error (live-clear)
+PASS  progressive fixing leaves only the remaining error
+[MTS demo analytics] pageview { page: 'test' }
+[MTS demo analytics] whatsapp_click { page: 'test' }
+[MTS demo analytics] lead_submit { ref: 'MTS-DEMO-TEST', service: 'websites' }
+PASS  track() records events to the local log
+PASS  every recorded event is marked local-stub
+PASS  GA4 ID is a DEMO placeholder
+PASS  Meta Pixel ID is a DEMO placeholder
+PASS  NO live Google/Meta analytics endpoints anywhere in source
+PASS  no real-looking GA4 ID in source
+PASS  sheet row gets a demo reference
+PASS  sheet target is labelled DEMO
+PASS  sheet log stores the row locally
+PASS  resetDemoLogs clears both logs
+PASS  WhatsApp URL uses the MTS number 923456481855
+PASS  WhatsApp message mentions MTS
+PASS  index.html carries at least one WhatsApp link
+PASS  index.html WhatsApp links all use the MTS number
+PASS  work.html carries at least one WhatsApp link
+PASS  work.html WhatsApp links all use the MTS number
+PASS  services.html carries at least one WhatsApp link
+PASS  services.html WhatsApp links all use the MTS number
+PASS  about.html carries at least one WhatsApp link
+PASS  about.html WhatsApp links all use the MTS number
+PASS  contact.html carries at least one WhatsApp link
+PASS  contact.html WhatsApp links all use the MTS number
+PASS  work data has exactly 13 queue projects
+PASS  every work slug is one of the real repo slugs
+PASS  every work URL is the real repo URL
+PASS  exactly 2 projects labelled live (Gift Basket + Restaurant)
+PASS  the live two are the built ones
+PASS  work filter counts: 13 / 2 / 11
+PASS  eight services in the data
+PASS  website development is the single primary service
+PASS  services.html has an anchored section per service
+PASS  no invented clients/stats/testimonial claims in copy
+PASS  no BalanceBit names/links anywhere (brand separation)
+PASS  founder credited truthfully
+PASS  Gujranwala base stated
+PASS  every page footer carries the DEMO note
+  code weight: 92.2 KB
+PASS  code weight < 400 KB
+PASS  assets/abstract-geometry.jpg ≤ ~120 KB (107 KB)
+PASS  assets/asad-ali.jpg ≤ ~120 KB (73 KB)
+PASS  assets/hero-studio.jpg ≤ ~120 KB (98 KB)
+PASS  assets/mts-logo.jpg ≤ ~120 KB (29 KB)
+PASS  assets/process-sketch.jpg ≤ ~120 KB (87 KB)
+  media weight: 394 KB across 5 images
+PASS  media total ≤ 1.6 MB
+PASS  sitemap.xml exists
+PASS  robots.txt exists
+PASS  index carries ProfessionalService JSON-LD
+PASS  JSON-LD founder is Asad Ali
+
+TOTAL: 270 PASS, 0 FAIL
