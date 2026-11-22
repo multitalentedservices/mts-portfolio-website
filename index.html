@@ -6,10 +6,11 @@
 <title>Multi-Talented Services (MTS) — Website Development & Digital Services | Gujranwala, Pakistan</title>
 <meta name="description" content="Multi-Talented Services (MTS) builds websites, software, apps and digital growth for businesses — from Gujranwala, Pakistan, for clients everywhere. Your Partner In Success.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="assets/fonts/fonts.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="assets/vendor/lenis.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"ProfessionalService","name":"Multi-Talented Services","alternateName":"MTS","slogan":"Your Partner In Success","description":"Website development, software, mobile apps and digital marketing services.","email":"talentedservices.official@gmail.com","telephone":"+92 345 6481855","address":{"@type":"PostalAddress","addressLocality":"Gujranwala","addressCountry":"PK"},"founder":{"@type":"Person","name":"Asad Ali","jobTitle":"Founder & CEO"},"sameAs":["https://github.com/multitalentedservices"]}
 </script>
@@ -54,7 +55,7 @@
   <section class="hero">
     <div class="wrap">
       <p class="eyebrow reveal">Multi-Talented Services — Gujranwala, Pakistan</p>
-      <h1 class="display reveal">We build<br><span class="outline-text">websites</span><br>that <span class="lime">work.</span></h1>
+      <h1 class="display" id="heroTitle">We build<br><span class="outline-text">websites</span><br>that <span class="lime">work.</span></h1>
       <p class="hero-sub reveal">MTS is a developing digital services company with one focus: websites, software and apps that help businesses grow. Designed properly. Built by hand. Launched with support.</p>
       <div class="hero-ctas reveal">
         <a class="btn btn-lime" href="contact.html">Start a project</a>
@@ -77,6 +78,26 @@
       <span>Website Development ✦ Software &amp; Systems ✦ Mobile Apps ✦ Digital Marketing ✦ API Integration ✦ AI Chatbots ✦ Cloud Setup ✦ Maintenance ✦&nbsp;</span>
     </div>
   </div>
+
+  <!-- 3D SHOWPIECE (isolated, lazy — loads only on visitor request) -->
+  <section class="section showpiece" aria-labelledby="showpiece-h">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Interactive showpiece · optional</p>
+        <h2 class="display sec-title" id="showpiece-h">The mark,<br>in <span class="lime">3D.</span></h2>
+        <p class="sec-lede">Our diamond mark as a real-time 3D object — rendered in your browser with Three.js. It is deliberately <strong>not</strong> loaded with the page: it arrives only when you ask for it, so the site stays fast for everyone else. Drag it once it loads.</p>
+      </div>
+      <div class="showpiece-stage reveal" id="showpieceStage">
+        <div class="showpiece-poster" id="showpiecePoster">
+          <span class="poster-diamond" aria-hidden="true"></span>
+          <p class="poster-caption">Static poster — the 3D object loads on request (~191 KB, once).</p>
+          <button class="btn btn-lime" type="button" id="showpieceLoad">Load the 3D showpiece</button>
+          <p class="showpiece-status" id="showpieceStatus" role="status" aria-live="polite"></p>
+        </div>
+        <canvas id="showpieceCanvas" hidden aria-label="Interactive 3D model of the MTS diamond mark — drag to rotate"></canvas>
+      </div>
+    </div>
+  </section>
 
   <!-- SERVICES -->
   <section class="section" aria-labelledby="svc-h">
@@ -291,5 +312,10 @@
 
 <script src="js/logic.js"></script>
 <script src="js/main.js"></script>
+<script defer src="assets/vendor/gsap.min.js"></script>
+<script defer src="assets/vendor/ScrollTrigger.min.js"></script>
+<script defer src="assets/vendor/SplitText.min.js"></script>
+<script defer src="assets/vendor/lenis.min.js"></script>
+<script defer src="js/premium.js"></script>
 </body>
 </html>

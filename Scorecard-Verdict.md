@@ -33,3 +33,86 @@ Reasons (defects as: what is wrong · where · what fixed looks like):
 Next step: [ ] To AICOS-025 release gate   [X] Back to Gate 5 (evidence completions only)   [ ] Back to Gate 2
 
 Test-battery disclosure: NO assertion was amended. tests.js was written fresh for this project and passed 270/270 as written (tests-output.log). The screenshot audit was made STRICTER mid-pass (leaf text-overflow check added after it caught a defect class the box-audit missed) — disclosed in BUILD-NOTES.md.
+
+---
+
+## Addendum — Re-verification FIX RUN (2026-11-21, later the same day)
+
+Independent re-verification (`Reverification-2026-11-21/REPORT.md`) found 1 visible + 2 minor
+defects. All three FIXED, re-shot and read; battery **270 PASS / 0 FAIL** unamended after fixes:
+
+- **MTS-1 (visible) — "How we work" process grid crushed at 320px.** `.process-grid-2` forced
+  two columns at every width, so inside the collapsed `.split` each step was ~133px wide:
+  headings clipped at the card edge and body text wrapped a word per line (the page's
+  `overflow-x:clip` kept this out of the overflow metrics — the grid boxes were inside the
+  viewport, the CONTENT was not readable). Fix: the grid itself collapses to one column at
+  ≤560px (`.process-grid-2{grid-template-columns:minmax(0,1fr)}`) — the fix is in the grid,
+  not in the clip net. Proof: `fix-mts-portfolio/index-probe320.png` — all four steps
+  full-width, headings complete, text wraps normally (DOM: every step box [18,302]).
+- **MTS-2 (minor) — lead-form placeholder clipped mid-word on phone** ("…my restauran" —
+  the input's own ellipsis text was itself cut by the field edge) on index + contact.
+  Fix: placeholder shortened in two measured steps to "A site for my restaurant…" —
+  verified by DOM at 320px (scrollWidth ≤ clientWidth on both forms; the first candidate
+  still overflowed by 19px and was rejected).
+- **MTS-3 (minor) — work.html desktop: ~190px of dead black space** between the hero intro
+  paragraph and the filter row (hero bottom padding 72px + section top padding 118px
+  stacking). Fix: the portfolio section takes `.section-flush` (padding-top 26px) — gap now
+  98px of deliberate spacing. Proof: DOM re-measure 190 → 98px; `fix-mts-portfolio/work-desktop.png`.
+- **Same-family audit fixes:** reveal no longer gates opacity (`body.js-reveal .reveal` is a
+  transform-only rise, `.in` = transform:none — content is fully visible even if the observer
+  never fires) and all 5 lazy content images (index ×3, about ×2) are eager. Re-verification
+  had recorded no blank sections on this site; the mechanism is now safe by construction.
+
+**Score: unchanged at 89/100 — REJECT (evidence bar only).** Held points remain the
+served-preview CWV (Area 7) and the AICOS-112 §0 sign-off (Area 1).
+
+---
+
+## Addendum — PREMIUM UPGRADE (2026-11-22, Ladder step 3)
+
+Premium layer added per Premium-Standard-and-Library-Plan §5 (#1 flagship). No demo
+content, prices or listings changed; tests.js UNAMENDED.
+
+- **Techniques:** SplitText poster-headline scene on the home hero (3 lines, masked
+  line-rise, 900ms, 120ms/line stagger — the page's one signature moment, P3);
+  Lenis smooth scroll synced to ScrollTrigger via the documented ticker pattern (P2,
+  home page only); CSS View Transitions site-wide (~400ms, P7); work-index marquee
+  (dark variant) + outcome-framed case-study depth pattern on work.html for the two
+  live demos (Brief / What was built / The outcome — demo outcomes stated as such,
+  no invented results, P10); display tracking tightened −0.015em → −0.03em (P4).
+- **Three.js showpiece: SHIPPED.** Isolated section on index.html, poster-first.
+  Three.js r187 (three.module.min.js + three.core.min.js + three.core.js, the 3-file
+  copy rule) loads ONLY on the visitor pressing "Load the 3D showpiece" — verified:
+  0 Three requests before the click; after it, THREE.REVISION 187 rendering real
+  frames (32+ in the first second), a lime-wireframe diamond with dark faceted core
+  and orbit ring, drag-to-rotate, screenshot-proven mid-interaction in
+  screenshots/three-showpiece.png (personally read — on-brand, framed, smooth).
+  Under file:// the module import is CORS-blocked by the browser and the section
+  degrades to poster + a plain status message with zero page errors — the site
+  passes the Premium Gate without it in both contexts, as required.
+- **JS weights (gzip, measured):** home initial = 64,223 B ≈ 62.7 KB (existing 7,473 +
+  GSAP 28,435 + ScrollTrigger 18,039 + SplitText 3,660 + Lenis 5,439 + premium.js
+  1,177) — P8 hero ≤90 KB PASS. Other pages = 7,473 B plain — ≤20 KB PASS.
+  Three.js lazy-only = 195,439 B + 1,598 B loader module, reported separately,
+  never in initial load.
+- **Battery:** before 270 PASS / 0 FAIL → after 276 PASS / 0 FAIL (the battery's own
+  ref-count grew with the new vendor/internal files; no assertion amended).
+  New separate premium-checks.js: 28 PASS / 0 FAIL.
+- **Screenshots:** full set re-shot — 15 page×viewport combos 0 overflow / 0 hidden /
+  0 broken; no-JS set 15/15 clean (complete static page, poster fallback visible);
+  reduced-motion set 15/15 clean (premium layer fully inert). Personally read:
+  index phone + desktop, work desktop, signature-moment.png (SplitText line 3 caught
+  mid-rise), three-showpiece.png (mid-drag).
+- **Premium Gate:** P1 PASS (audit base rule untouched, verified in premium-checks) ·
+  P2 PASS (home hero page) · P3 PASS · P4 PASS (clamp to 9.6rem, lh .94, −0.03em) ·
+  P5 PASS (type-statement hero; showpiece poster-first, optional) · P6 PASS ·
+  P7 PASS · P8 PASS on measured JS budgets (CWV still unmeasured — no served
+  preview exists; not claimed) · P9 PASS · P10 PASS.
+- **Console:** zero local errors; the only failed request in the sandbox is the
+  pre-existing Google Fonts stylesheet via the egress proxy (environmental).
+
+**Re-score: 89 → 91 / 100** (Area 4 Animation & interactions 9→10 — SplitText scene,
+Lenis, View Transitions, working 3D; Area 6 Functionality 14→15 — showpiece +
+case-study depth, all flows re-proven). **Verdict unchanged: REJECT — evidence bar
+only.** The two held items are the same external ones: served-preview CWV (Area 7)
+and AICOS-112 §0 sign-off (Area 1). No build defects outstanding.
